@@ -1,8 +1,8 @@
 import React from 'react';
-import AddAllButton from "../../shared/AddAllButton";
-import FilterSearch from "../../shared/FilterSearch";
-import PlayAllButton from "../../shared/PlayAllButton";
-import TrackNumberButton from "../../shared/TrackNumberButton";
+import AddAllButton from "../../shared/addallbutton/AddAllButton";
+import FilterSearch from "../../shared/filtersearch/FilterSearch";
+import PlayAllButton from "../../shared/playallbutton/PlayAllButton";
+import TrackNumberButton from "../../shared/tracknumberbutton/TrackNumberButton";
 import './ActionsHeader.css'; 
 
 export const ActionsHeader = () => {

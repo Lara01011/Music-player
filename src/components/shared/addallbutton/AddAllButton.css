@@ -1,4 +1,4 @@
-.play-all-button {
+.add-all-button {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -10,31 +10,30 @@
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s;
-    box-shadow: 0px 1px 5px 1px rgba(99,87,87,0.75);
--webkit-box-shadow: 0px 1px 5px 1px rgba(99,87,87,0.75);
--moz-box-shadow: 0px 1px 5px 1px rgba(99,87,87,0.75);
+    
   }
-  .play-all-button .play-svg-wrapper{
+.add-all-button .add-svg-wrapper{
     font-size: 20px;
     margin-right: 4px;
     display: flex;
     align-items: center;
   }
-  .play-all-conteiner{
+.add-all-conteiner{
     display: flex;
     justify-content: start;
     border: 1px solid black;
     border-radius:4px;
-    box-shadow: 2px 0px 47px 10px rgba(50,48,48,0.75) inset;
-  -webkit-box-shadow: 2px 0px 47px 10px rgba(50,48,48,0.75) inset;
-  -moz-box-shadow: 2px 0px 47px 10px rgba(50,48,48,0.75) inset;
+
+    margin-left: 5px;
+    
+    
   }
   
-  .play-all-button:hover {
+.add-all-button:hover {
     background-color: #c0cad4;
   }
 
-  .chevrone-dropdown{
+.chevrone-dropdown-add{
     background-color: white;
     border-left: 1px solid black;
     border-bottom-right-radius: 4px;
@@ -45,18 +44,18 @@
     transition: background-color 0.3s;
     
   }
-  .chevrone-dropdown:hover {
-    background-color: #c0cad4; /* Change on hover */
+.chevrone-dropdown-add:hover {
+    background-color: #c0cad4; 
   }
 
   
-  @media (max-width: 600px) {
-    .play-all-button {
+  @media (max-width: 900px) {
+  .add-all-button {
       font-size: 14px; 
       padding: 8px 15px;
     }
   
-    .play-all-button svg {
+  .add-all-button svg {
       height: 18px;
       width: 18px;
     }

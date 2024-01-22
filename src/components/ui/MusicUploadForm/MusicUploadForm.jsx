@@ -1,5 +1,4 @@
-// src/components/MusicUploadForm.js
-import React, { useState, useContext, useEffect } from 'react';
+import React, { useState, useContext } from 'react';
 import { MusicContext } from '../../../context/MusicContext';
 import {parseActorAndSongName} from '../../../utils/parseActorAndSongName';
 const MusicUploadForm = () => {
@@ -40,7 +39,7 @@ const MusicUploadForm = () => {
       {uploading && <p>Uploading...</p>}
       {uploadError && <p style={{ color: 'red' }}>{uploadError}</p>}
       <button onClick={handleUpload} disabled={uploading || !selectedFile}>
-        Upload
+        <span>Upload</span>
       </button>
     </div>
   );

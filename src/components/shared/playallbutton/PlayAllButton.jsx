@@ -1,5 +1,5 @@
 import React from 'react';
-import { Chevrone, Play } from '../svg'; 
+import { Chevrone, Play } from '../../svg'; 
 import './PlayAllButton.css'; 
 
 const PlayAllButton = () => {
@@ -13,7 +13,7 @@ const PlayAllButton = () => {
       <div className='play-svg-wrapper'>
         <Play /> 
       </div>
-      <span>Play All</span>
+      {window.innerWidth > 900 && <span>Play All</span>}
     </button>
     <button className='chevrone-dropdown'>
       <Chevrone/>

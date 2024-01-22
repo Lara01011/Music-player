@@ -3,8 +3,8 @@
     align-items: center;
     justify-content: space-between;
     padding: 5px;
-    background-color: #f2f2f2; /* Example background color */
-    border-bottom: 1px solid #ccc; /* Example border */
+    background-color: #f2f2f2; 
+    border-bottom: 1px solid #ccc; 
     border-radius: 15px;
     padding: 7px;
     
@@ -14,6 +14,7 @@
 }
 .actions-header-2 {
     display: flex;
+    align-items: center;
 }
 
 .filter-search input {
@@ -21,10 +22,20 @@
     margin-left: 5px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
     .actions-header {
         display: flex;
-        flex-direction: unset;
         flex-wrap: wrap;
+        flex-flow: column;
     }
 }
+
+@media (max-width: 650px) {
+    .search-container {
+        
+        width: 80px;
+    }
+}
+
+
+

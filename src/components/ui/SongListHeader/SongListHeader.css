@@ -9,7 +9,7 @@
   }
   
   .song-header-item {
-    flex: 1; /* Each item takes equal space */
+    flex: 1; 
     text-align: start;
     padding: 5px;
     font-weight: bold;
@@ -17,7 +17,7 @@
     
   }
   
-  /* Responsive Design */
+  
   @media (max-width: 600px) {
     .song-list-header {
       flex-direction: row;

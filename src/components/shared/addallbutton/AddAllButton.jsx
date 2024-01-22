@@ -1,5 +1,5 @@
 import React from 'react';
-import { Add, Chevrone } from '../svg'; // Adjust path as needed
+import { Add, Chevrone } from '../../svg';
 import './AddAllButton.css'; 
 
 const AddAllButton = () => {
@@ -14,7 +14,7 @@ const AddAllButton = () => {
   <div className='add-svg-wrapper'>
   <Add /> 
   </div>
-  <span>Add All</span>
+  {window.innerWidth > 900 && <span>Add All</span>}
 </button>
 <button className='chevrone-dropdown-add'>
   <Chevrone/>

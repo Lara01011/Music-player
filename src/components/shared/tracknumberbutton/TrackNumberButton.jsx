@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowsVertical, Chevrone } from '../svg'; 
+import { ArrowsVertical, Chevrone } from '../../svg'; 
 import './TrackNumberButton.css'; 
 
 const TrackNumberButton = () => {
@@ -14,7 +14,7 @@ const TrackNumberButton = () => {
   <div className='track-number-svg-wrapper'>
   <ArrowsVertical /> 
   </div>
-  <span>Track Number</span>
+  {window.innerWidth > 900 && <span>Track Number</span>}
 </button>
 <button className='chevrone-dropdown-arrows-vertical'>
   <Chevrone/>

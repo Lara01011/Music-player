@@ -1,7 +1,5 @@
 import React from 'react';
 import SongList from './components/ui/SongsList/SongList';
-import PlayAllButton from './components/shared/PlayAllButton';
-import AddAllButton from './components/shared/AddAllButton';
 import MusicUploadForm from './components/ui/MusicUploadForm/MusicUploadForm';
 import { MusicProvider } from './context/MusicContext';
 import './App.css'
