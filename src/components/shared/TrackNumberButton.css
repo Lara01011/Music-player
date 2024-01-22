@@ -1,0 +1,95 @@
+.track-number-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #17a2b8; /* Example teal background */
+    color: white;
+    border: none;
+    box-shadow: 0px 1px 5px 1px rgba(99,87,87,0.75);
+-webkit-box-shadow: 0px 1px 5px 1px rgba(99,87,87,0.75);
+-moz-box-shadow: 0px 1px 5px 1px rgba(99,87,87,0.75);
+    
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .track-number-button:hover {
+    background-color: #138496; /* Darker teal on hover */
+  }
+  
+  .track-number-button svg {
+    height: 20px; /* Adjust the size of your SVG icons */
+    width: 20px; /* Adjust the size of your SVG icons */
+    fill: currentColor; /* SVG color matches the text color */
+  }
+  
+
+   
+ 
+  .track-number-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    color: rgb(5, 5, 5);
+    border: none;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  .track-number-button .track-number-svg-wrapper{
+    font-size: 20px;
+    margin-right: 4px;
+    display: flex;
+    align-items: center;
+  }
+  .track-number-conteiner{
+    display: flex;
+    justify-content: start;
+    border: 1px solid black;
+    border-radius:4px;
+    box-shadow: 2px 0px 47px 10px rgba(50,48,48,0.75) inset;
+  -webkit-box-shadow: 2px 0px 47px 10px rgba(50,48,48,0.75) inset;
+  -moz-box-shadow: 2px 0px 47px 10px rgba(50,48,48,0.75) inset;
+  }
+  
+  .track-number-button:hover {
+    background-color: #c0cad4;
+  }
+
+  .chevrone-dropdown-arrows-vertical{
+    background-color: white;
+    
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    transition: background-color 0.3s;
+    box-shadow: 0px 1px 5px 1px rgba(99,87,87,0.75);
+-webkit-box-shadow: 0px 1px 5px 1px rgba(99,87,87,0.75);
+-moz-box-shadow: 0px 1px 5px 1px rgba(99,87,87,0.75);
+    
+  }
+  .chevrone-dropdown-arrows-vertical:hover {
+    background-color: #c0cad4; /* Change on hover */
+  }
+
+  
+  @media (max-width: 600px) {
+    .track-number-button {
+      font-size: 14px; 
+      padding: 8px 15px;
+    }
+  
+    .track-number-button svg {
+      height: 18px;
+      width: 18px;
+    }
+  }
+
+ 
+  

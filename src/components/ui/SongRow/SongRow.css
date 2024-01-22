@@ -1,0 +1,65 @@
+.song-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.2s;
+}
+
+.song-row:hover {
+  background-color: #f0f0f0; /* Light gray background on hover */
+}
+
+.song-row > span {
+  margin: 0 5px;
+  flex-grow: 1; /* Ensures that the song info takes up available space */
+}
+
+/* Icons Container */
+.icons-container {
+  display: flex;
+  align-items: center;
+}
+
+.icons-container > div {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.icons-container > div:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 360px) { /* Targeting extra small screens, like small smartphones */
+  .song-row {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px; /* Slightly smaller padding */
+  }
+
+  .song-row > span, .icons-container > div {
+    margin-bottom: 4px; /* Reduced space below each item */
+    width: 100%; /* Each item takes the full width */
+  }
+
+  .icons-container {
+    flex-direction: row;
+    justify-content: start; /* Align icons to the start */
+    flex-wrap: wrap; /* Allows icons to wrap if needed */
+    width: 100%; /* Full width for the container */
+    margin-top: 5px; /* Less space above the icons container */
+  }
+
+  .icons-container > div {
+    flex-basis: 20%; /* Allocate 20% of the width to each icon */
+    margin: 0 2px; /* Small margin around icons */
+    text-align: center; /* Center the icons */
+  }
+
+  /* Adjust font size for song details on smaller screens */
+  .song-row > span {
+    font-size: 14px; /* Slightly smaller font size */
+  }
+}

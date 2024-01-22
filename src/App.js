@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from 'react';
+import SongList from './components/ui/SongsList/SongList';
+import PlayAllButton from './components/shared/PlayAllButton';
+import AddAllButton from './components/shared/AddAllButton';
+import MusicUploadForm from './components/ui/MusicUploadForm/MusicUploadForm';
+import { MusicProvider } from './context/MusicContext';
+import './App.css'
+import { ActionsHeader } from './components/ui/ActionsHeader/ActionsHeader';
+import SongListHeader from './components/ui/SongListHeader/SongListHeader';
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MusicProvider>
+      <div className="container">
+        <ActionsHeader/>
+        <SongListHeader/>
+        <SongList />
+        <MusicUploadForm />
+      </div>
+    </MusicProvider>
   );
-}
+};
 
 export default App;

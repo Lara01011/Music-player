@@ -1,0 +1,31 @@
+.song-list-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ddd;
+    margin: 20px 0px;
+    
+  }
+  
+  .song-header-item {
+    flex: 1; /* Each item takes equal space */
+    text-align: start;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .song-list-header {
+      flex-direction: row;
+      text-align: center;
+    }
+  
+    .song-header-item {
+      margin-bottom: 5px;
+    }
+  }
+  

@@ -1,0 +1,30 @@
+.actions-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: #f2f2f2; /* Example background color */
+    border-bottom: 1px solid #ccc; /* Example border */
+    border-radius: 15px;
+    padding: 7px;
+    
+}
+.actions-header-1 {
+    display: flex;
+}
+.actions-header-2 {
+    display: flex;
+}
+
+.filter-search input {
+    padding: 5px;
+    margin-left: 5px;
+}
+
+@media (max-width: 600px) {
+    .actions-header {
+        display: flex;
+        flex-direction: unset;
+        flex-wrap: wrap;
+    }
+}
